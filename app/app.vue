@@ -1,4 +1,37 @@
 <script setup lang="ts">
+type Platform = 'windows' | 'macos' | 'linux' | 'mobile' | 'unknown'
+
+const platform = ref<Platform>('unknown')
+
+const downloads = {
+  windows: { label: '下載 Windows 版', href: 'https://github.com/llavon-ime/ime-windows/releases/tag/latest' },
+  macos: { label: '查看 macOS 安裝步驟', href: 'https://github.com/llavon-ime/homebrew-llavon-ime#使用者安裝一鍵安裝' },
+  linux: { label: '查看 Linux 安裝步驟', href: 'https://github.com/llavon-ime/ime-fcitx5#linux' }
+} as const
+
+const primaryDownload = computed(() => {
+  if (platform.value === 'windows' || platform.value === 'macos' || platform.value === 'linux') {
+    return downloads[platform.value]
+  }
+  return null
+})
+
+onMounted(() => {
+  const userAgent = navigator.userAgent
+  if (/Android|iPhone|iPad|iPod|Mobile|Tablet/i.test(userAgent)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+    platform.value = 'mobile'
+  } else if (/Windows/i.test(userAgent)) {
+    platform.value = 'windows'
+  } else if (/Macintosh|Mac OS X/i.test(userAgent)) {
+    platform.value = 'macos'
+  } else if (/CrOS/i.test(userAgent)) {
+    platform.value = 'unknown'
+  } else if (/Linux/i.test(userAgent)) {
+    platform.value = 'linux'
+  }
+})
+
 useSeoMeta({
   title: '拉風輸入法 — 本機語言模型注音輸入法',
   description: '拉風輸入法以大型語言模型（LLM）技術棧為核心，使用專為繁體中文注音訓練的模型，在本機根據前文與注音選字。',
@@ -46,8 +79,10 @@ useSeoMeta({
           <p class="hero-description">拉風輸入法以大型語言模型（LLM）技術棧為核心，使用專為繁體中文注音訓練的模型，根據前文、已選文字和注音預測候選字。推論在本機完成，輸入內容不需要送往雲端。</p>
           <p class="hero-distinction">本專案絕不是直接將現有大語言模型服務或現成模型接至注音輸入法。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/llavon-ime/ime-windows/releases/tag/latest" target="_blank" rel="noopener noreferrer">下載 Windows 版 <span aria-hidden="true">↗</span></a>
-            <a class="button button-text" href="#get-started">查看其他平台 <span aria-hidden="true">↓</span></a>
+            <a v-if="primaryDownload" class="button button-primary" :href="primaryDownload.href" target="_blank" rel="noopener noreferrer">{{ primaryDownload.label }} <span aria-hidden="true">↗</span></a>
+            <span v-else-if="platform === 'mobile'" class="button button-unavailable" role="status">手機端不支援</span>
+            <a v-else class="button button-primary" href="#get-started">查看支援平台 <span aria-hidden="true">↓</span></a>
+            <a class="button button-text" href="#get-started">查看各平台 <span aria-hidden="true">↓</span></a>
           </div>
           <p class="hero-note">Windows x64 · macOS arm64 · Linux x86_64　／　專案仍在開發中</p>
         </div>
@@ -129,7 +164,7 @@ useSeoMeta({
         <div class="wrap">
           <div class="get-heading"><div><span class="section-index">03 / 各平台</span><h2>下載與安裝</h2></div><p>各平台的安裝條件與步驟可能隨版本變動；請以專案 README 和發布頁為準。</p></div>
           <div class="platform-grid">
-            <a class="platform-card platform-primary" href="https://github.com/llavon-ime/ime-windows/releases/tag/latest" target="_blank" rel="noopener noreferrer">
+            <a class="platform-card" href="https://github.com/llavon-ime/ime-windows/releases/tag/latest" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">WINDOWS 10+ · X64 <span>↗</span></span>
               <span class="platform-title">Windows <span>↗</span></span>
               <span class="platform-desc">一般使用者下載最新發布頁面的 <code>*-setup.exe</code>；安裝程式會下載並驗證預設模型。</span>

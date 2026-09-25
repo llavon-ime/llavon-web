@@ -49,6 +49,8 @@ h1 em { color: #a96d57; font-style: normal; }
 .button-primary { background: #292522; color: #fff; }
 .button-primary:hover { background: #a96d57; }
 .button-primary span { font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; }
+.button-unavailable { border: 1px solid #e3dfda; color: #746b63; cursor: default; }
+.button-unavailable:hover { transform: none; }
 .button-text { color: #514b46; }
 .button-text:hover { color: #a96d57; }
 .button-text span { font-family: Arial, sans-serif; font-size: 18px; font-weight: 400; }
@@ -114,18 +116,13 @@ h1 em { color: #a96d57; font-style: normal; }
 .platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .platform-card { min-height: 294px; display: flex; flex-direction: column; padding: 26px 28px 24px; background: #fff; border: 1px solid #e9e1da; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .platform-card:hover { transform: translateY(-4px); border-color: #c49a88; box-shadow: 0 12px 24px #6853440c; }
-.platform-primary { background: #342f2b; border-color: #342f2b; color: #fff; }
-.platform-primary:hover { border-color: #342f2b; box-shadow: 0 12px 24px #342f2b24; }
 .platform-meta { display: flex; align-items: center; justify-content: space-between; color: #a88b7c; font-family: Arial, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: .11em; }
-.platform-primary .platform-meta { color: #dbc2b4; }
 .platform-meta span { font-size: 16px; font-weight: 400; }
 .platform-title { display: flex; align-items: baseline; justify-content: space-between; margin-top: 41px; font-family: Georgia, "Noto Serif TC", serif; font-size: 33px; letter-spacing: -.045em; }
 .platform-title span { font-family: Arial, sans-serif; font-size: 18px; font-weight: 400; opacity: .55; }
 .platform-desc { display: block; max-width: 290px; margin-top: 17px; color: #817970; font-size: 12px; line-height: 1.9; }
 .platform-desc code { font-family: Consolas, "Courier New", monospace; font-size: .96em; }
-.platform-primary .platform-desc { color: #d6cbc4; }
 .platform-end { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 26px; color: #9a634f; font-size: 12px; font-weight: 600; }
-.platform-primary .platform-end { color: #e4b49e; }
 .platform-end span { font-size: 18px; font-weight: 400; }
 .license-panel { display: grid; grid-template-columns: 1fr 1fr; margin-top: 22px; border-top: 1px solid #e5ded7; border-bottom: 1px solid #e5ded7; }
 .license-panel > div { display: flex; align-items: center; gap: 22px; min-height: 76px; padding: 17px 20px 17px 0; }

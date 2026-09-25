@@ -96,6 +96,8 @@ h1 em { color: #a96d57; font-style: normal; }
 .feature-item p { max-width: 290px; color: #77706a; font-size: 12px; line-height: 1.9; margin-bottom: 0; }
 .feature-link { display: inline-block; margin-top: 14px; color: #925b48; font-size: 11px; font-weight: 600; }
 .feature-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.feature-links { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 14px; }
+.feature-links .feature-link { margin-top: 0; }
 
 .how-layout { display: grid; grid-template-columns: .8fr 1fr; gap: 110px; }
 .how-intro h2 { margin: 28px 0 26px; }
@@ -181,6 +183,7 @@ h1 em { color: #a96d57; font-style: normal; }
   .feature-item h3 { grid-column: 2; grid-row: 2; margin-top: 9px; margin-bottom: 10px; }
   .feature-item p { grid-column: 2; grid-row: 3; max-width: 400px; }
   .feature-link { grid-column: 2; grid-row: 4; }
+  .feature-links { grid-column: 2; grid-row: 4; }
   .how-layout { grid-template-columns: 1fr; gap: 45px; }
   .how-intro h2 { margin-top: 23px; }
   .get-heading { display: block; margin-bottom: 37px; }

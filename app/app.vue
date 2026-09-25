@@ -119,6 +119,7 @@ useSeoMeta({
               <div class="feature-symbol" aria-hidden="true">文<span>脈</span></div>
               <h3>依上下文選字</h3>
               <p>模型結合前文、注音序列與已選文字，預測適合目前句子的候選字。</p>
+              <a class="feature-link" href="https://www.csie.ntpu.edu.tw/uploads/file/f1_202606101504240352.pdf" target="_blank" rel="noopener noreferrer">了解更多 ↗</a>
             </article>
             <article class="feature-item">
               <span class="feature-number">02</span>
@@ -138,7 +139,10 @@ useSeoMeta({
               <div class="feature-symbol feature-symbol-lora" aria-hidden="true">LoRA</div>
               <h3>個人化 LoRA 微調</h3>
               <p>利用輸入紀錄在本機微調模型，讓選字更貼近你的用字習慣。訓練紀錄加密保存在本機。</p>
-              <a class="feature-link" href="https://github.com/llavon-ime/lora-trainer" target="_blank" rel="noopener noreferrer">了解 LoRA 微調 ↗</a>
+              <div class="feature-links">
+                <a class="feature-link" href="https://github.com/llavon-ime/lora-trainer" target="_blank" rel="noopener noreferrer">了解 LoRA 微調 ↗</a>
+                <a class="feature-link" href="https://zh.wikipedia.org/zh-tw/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86" target="_blank" rel="noopener noreferrer">了解加密 ↗</a>
+              </div>
             </article>
           </div>
         </div>

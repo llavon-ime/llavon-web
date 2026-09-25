@@ -110,6 +110,7 @@ h1 em { color: #a96d57; font-style: normal; }
 .flow-item h3 { margin-bottom: 9px; font-family: "Noto Serif TC", "Songti TC", serif; font-size: 21px; font-weight: 600; letter-spacing: -.03em; }
 .flow-item p { color: #918780; font-size: 12px; line-height: 1.7; margin: 0; }
 .flow-glyph { justify-self: end; color: #d8c0b2; font-family: "Noto Serif TC", serif; font-size: 27px; letter-spacing: -.1em; }
+.flow-illustration { display: block; justify-self: end; width: 72px; height: 108px; object-fit: contain; }
 
 .get-section { background: #fff; border-top: 1px solid #eee9e4; }
 .get-heading { display: flex; align-items: end; justify-content: space-between; gap: 50px; margin-bottom: 49px; }
@@ -222,6 +223,7 @@ h1 em { color: #a96d57; font-style: normal; }
   .section-heading h2, .how-intro h2, .get-heading h2 { font-size: 36px; }
   .flow-item { grid-template-columns: 25px 1fr 40px; gap: 10px; }
   .flow-glyph { font-size: 20px; }
+  .flow-illustration { width: 38px; height: 57px; }
   .footer-inner { display: block; padding-block: 60px; }
   .footer-links { margin-top: 24px; }
   .footer-bottom { flex-direction: column; gap: 7px; }

@@ -159,7 +159,7 @@ useSeoMeta({
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <div><a class="footer-brand" href="#top">拉風輸入法</a><p>開源的繁體中文注音輸入法</p></div>
-        <div class="footer-links"><a href="https://github.com/llavon-ime" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/llavon-ime/ime-windows/issues" target="_blank" rel="noopener noreferrer">Windows 問題 ↗</a><a href="https://github.com/llavon-ime/ime-fcitx5/issues" target="_blank" rel="noopener noreferrer">macOS / Linux 問題 ↗</a></div>
+        <div class="footer-links"><a href="https://github.com/llavon-ime" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/llavon-ime/ime-windows/issues" target="_blank" rel="noopener noreferrer">Windows issue ↗</a><a href="https://github.com/llavon-ime/ime-fcitx5/issues" target="_blank" rel="noopener noreferrer">macOS / Linux issue ↗</a></div>
       </div>
       <div class="wrap footer-bottom"><span>© {{ new Date().getFullYear() }} Llavon IME</span><span>Windows · macOS · Linux</span></div>
     </footer>

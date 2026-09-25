@@ -154,7 +154,7 @@ useSeoMeta({
           <div class="how-intro">
             <span class="section-index">02 / 運作方式</span>
             <h2>選字流程</h2>
-            <p>輸入法前端負責接收注音與呈現候選字；共用的本機服務載入模型並執行推論。跨平台 C++ 核心處理斷詞、候選遮蔽與 llama.cpp 推論。</p>
+            <p>輸入法前端與系統溝通並接收注音及呈現候選字；共用跨平台 C++ 核心載入模型以完成本地推論。</p>
             <a class="inline-link" href="https://github.com/llavon-ime/ime-core" target="_blank" rel="noopener noreferrer">查看 ime-core 原始碼 <span aria-hidden="true">↗</span></a>
           </div>
           <div class="flow-list" aria-label="輸入法運作流程">

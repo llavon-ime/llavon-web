@@ -21,12 +21,8 @@ button { font: inherit; }
 
 .site-header { height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 36px; border-bottom: 1px solid #ece8e3; }
 .brand { display: inline-flex; align-items: center; gap: 13px; flex: none; }
-.brand-mark { width: 34px; height: 39px; position: relative; display: flex; gap: 5px; align-items: flex-start; color: #292522; font-family: Georgia, serif; font-size: 36px; font-weight: 700; line-height: 1; transform: translateY(-2px); }
-.brand-mark span:last-of-type { transform: translateY(4px); }
-.brand-mark i { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #bf7961; top: 1px; right: -2px; }
-.brand-name { font-family: Arial, sans-serif; font-size: 20px; letter-spacing: -.055em; font-weight: 700; }
-.brand-divider { display: inline-block; color: #c9bcb3; padding: 0 4px; font-weight: 400; }
-.brand-ime { font-weight: 400; letter-spacing: -.04em; }
+.brand-logo { width: 42px; height: 42px; display: block; object-fit: cover; border: 1px solid #ece8e3; }
+.brand-name { font-family: "Noto Serif TC", "Songti TC", serif; font-size: 19px; letter-spacing: .02em; font-weight: 700; }
 .header-nav { display: flex; align-items: center; gap: 42px; margin-left: auto; }
 .header-nav a { font-size: 13px; color: #756f6a; transition: color .2s ease; }
 .header-nav a:hover, .footer-links a:hover { color: #ab674f; }
@@ -45,7 +41,8 @@ h1, h2, h3, p { margin-top: 0; }
 h1, h2 { font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif; font-weight: 600; letter-spacing: -.055em; }
 h1 { font-size: clamp(48px, 5.4vw, 78px); line-height: 1.38; margin-bottom: 31px; white-space: nowrap; }
 h1 em { color: #a96d57; font-style: normal; }
-.hero-description { max-width: 510px; color: #746c65; font-size: 16px; line-height: 2; letter-spacing: .025em; margin-bottom: 38px; }
+.hero-description { max-width: 510px; color: #746c65; font-size: 16px; line-height: 2; letter-spacing: .025em; margin-bottom: 18px; }
+.hero-distinction { max-width: 510px; margin: 0 0 35px; padding-left: 14px; border-left: 2px solid #a96d57; color: #4f4944; font-size: 13px; line-height: 1.8; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; }
 .button { min-height: 51px; display: inline-flex; align-items: center; justify-content: center; gap: 21px; padding: 0 23px; border-radius: 3px; font-size: 13px; font-weight: 600; letter-spacing: .015em; transition: transform .2s ease, background .2s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -68,7 +65,7 @@ h1 em { color: #a96d57; font-style: normal; }
 .card-dots i { width: 6px; height: 6px; background: #e7ddd5; border-radius: 50%; }
 .card-dots i:first-child { background: #c88c77; }
 .card-top-icon { color: #b07c67; font-size: 18px; line-height: .7; }
-.model-label { color: #925b48; font-family: Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .13em; }
+.model-label { color: #925b48; font-size: 10px; font-weight: 700; letter-spacing: .13em; }
 .model-name { margin: 10px 0 5px; color: #302b27; font-family: Georgia, "Noto Serif TC", serif; font-size: 49px; line-height: 1.2; letter-spacing: -.07em; }
 .model-name span { color: #b47a64; font-family: "Noto Sans TC", sans-serif; font-size: 16px; letter-spacing: -.02em; vertical-align: 9px; }
 .model-description { color: #746b63; font-size: 11px; letter-spacing: .03em; }
@@ -76,7 +73,7 @@ h1 em { color: #a96d57; font-style: normal; }
 .model-flow div { display: flex; align-items: center; gap: 18px; min-height: 43px; border-bottom: 1px solid #eee8e3; }
 .model-flow small { width: 55px; flex: none; color: #925b48; font-size: 10px; font-weight: 600; letter-spacing: .1em; }
 .model-flow span { color: #6e645d; font-size: 11px; letter-spacing: .02em; }
-.visual-footnote { position: absolute; bottom: 30px; right: 33px; font-family: Arial, sans-serif; font-size: 10px; letter-spacing: .12em; color: #746b63; }
+.visual-footnote { position: absolute; bottom: 30px; right: 33px; font-size: 10px; letter-spacing: .12em; color: #746b63; }
 .visual-footnote span { color: #bc8068; padding-inline: 5px; }
 
 .section-pad { padding-block: 118px; }
@@ -85,15 +82,18 @@ h1 em { color: #a96d57; font-style: normal; }
 .section-heading h2, .how-intro h2, .get-heading h2 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.42; margin-bottom: 0; }
 .section-heading h2 { width: 66%; }
 .section-index { display: inline-block; padding-top: 15px; white-space: nowrap; }
-.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #e7e0da; }
-.feature-item { min-height: 320px; padding: 26px 38px 0 0; position: relative; }
-.feature-item + .feature-item { border-left: 1px solid #e7e0da; padding-left: 38px; }
+.features-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #e7e0da; }
+.feature-item { min-height: 340px; padding: 26px 25px 0 0; position: relative; }
+.feature-item + .feature-item { border-left: 1px solid #e7e0da; padding-left: 25px; }
 .feature-number { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: .1em; color: #aa9a8f; }
 .feature-symbol { height: 105px; padding-top: 14px; color: #ae745e; font-family: "Noto Serif TC", "Songti TC", serif; font-size: 62px; line-height: 1; letter-spacing: -.1em; }
 .feature-symbol span { color: #d8bbaa; font-size: 41px; vertical-align: 20px; }
 .feature-symbol-phonetic { letter-spacing: -.19em; }
+.feature-symbol-lora { font-family: Georgia, serif; font-size: 50px; letter-spacing: -.08em; padding-top: 25px; }
 .feature-item h3 { font-family: "Noto Serif TC", "Songti TC", serif; font-size: 23px; font-weight: 600; letter-spacing: -.04em; margin-bottom: 15px; }
-.feature-item p { max-width: 290px; color: #77706a; font-size: 13px; line-height: 2; margin-bottom: 0; }
+.feature-item p { max-width: 290px; color: #77706a; font-size: 12px; line-height: 1.9; margin-bottom: 0; }
+.feature-link { display: inline-block; margin-top: 14px; color: #925b48; font-size: 11px; font-weight: 600; }
+.feature-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .how-layout { display: grid; grid-template-columns: .8fr 1fr; gap: 110px; }
 .how-intro h2 { margin: 28px 0 26px; }
@@ -137,8 +137,7 @@ h1 em { color: #a96d57; font-style: normal; }
 
 .site-footer { background: #fff; }
 .footer-inner { display: flex; justify-content: space-between; align-items: start; gap: 30px; padding-top: 78px; padding-bottom: 78px; }
-.footer-brand { font-family: Arial, sans-serif; font-size: 39px; font-weight: 700; letter-spacing: -.075em; }
-.footer-brand span { color: #b87860; }
+.footer-brand { font-family: "Noto Serif TC", "Songti TC", serif; font-size: 29px; font-weight: 700; letter-spacing: .02em; }
 .footer-inner p { margin: 11px 0 0; color: #928a83; font-size: 12px; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 14px 28px; padding-top: 14px; font-size: 12px; color: #655e58; }
 .footer-bottom { min-height: 55px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid #ece8e4; padding-top: 18px; padding-bottom: 20px; color: #aaa19a; font-family: Arial, sans-serif; font-size: 10px; letter-spacing: .03em; }
@@ -149,9 +148,10 @@ h1 em { color: #a96d57; font-style: normal; }
   h1 { font-size: clamp(42px, 5vw, 62px); }
   .hero-visual { height: 510px; }
   .composition-card { width: 90%; padding: 22px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-item:nth-child(3) { border-left: 0; padding-left: 0; }
+  .feature-item:nth-child(n+3) { border-top: 1px solid #e7e0da; }
   .how-layout { gap: 55px; }
-  .feature-item { padding-right: 22px; }
-  .feature-item + .feature-item { padding-left: 22px; }
 }
 
 @media (max-width: 760px) {
@@ -176,12 +176,14 @@ h1 em { color: #a96d57; font-style: normal; }
   .section-heading { display: block; margin-bottom: 42px; }
   .section-heading h2 { width: auto; margin-top: 24px; }
   .features-grid { grid-template-columns: 1fr; }
-  .feature-item, .feature-item + .feature-item { min-height: 0; display: grid; grid-template-columns: 72px 1fr; gap: 0 18px; padding: 28px 0; border-left: 0; border-bottom: 1px solid #e7e0da; }
+  .features-grid .feature-item { min-height: 0; display: grid; grid-template-columns: 72px 1fr; gap: 0 18px; padding: 28px 0; border-left: 0; border-top: 0; border-bottom: 1px solid #e7e0da; }
   .feature-number { grid-column: 1; }
   .feature-symbol { grid-column: 1; grid-row: 2 / 4; height: auto; padding-top: 8px; font-size: 52px; }
   .feature-symbol span { font-size: 32px; }
+  .feature-symbol-lora { font-size: 27px; padding-top: 11px; }
   .feature-item h3 { grid-column: 2; grid-row: 2; margin-top: 9px; margin-bottom: 10px; }
   .feature-item p { grid-column: 2; grid-row: 3; max-width: 400px; }
+  .feature-link { grid-column: 2; grid-row: 4; }
   .how-layout { grid-template-columns: 1fr; gap: 45px; }
   .how-intro h2 { margin-top: 23px; }
   .get-heading { display: block; margin-bottom: 37px; }

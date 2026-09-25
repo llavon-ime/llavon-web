@@ -1,12 +1,12 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: '拉風輸入法 Llavon IME — 本機語言模型注音輸入法',
-  description: '拉風輸入法使用專為繁體中文注音訓練的語言模型，在本機根據前文與注音選字。提供 Windows、macOS 與 Linux 安裝資訊。',
-  ogTitle: '拉風輸入法 Llavon IME',
+  title: '拉風輸入法 — 本機語言模型注音輸入法',
+  description: '拉風輸入法以大型語言模型（LLM）技術棧為核心，使用專為繁體中文注音訓練的模型，在本機根據前文與注音選字。',
+  ogTitle: '拉風輸入法',
   ogDescription: '使用本機語言模型選字的繁體中文注音輸入法。',
   ogType: 'website',
-  ogImage: '/og-image.svg',
-  twitterCard: 'summary_large_image'
+  ogImage: '/llavon-avatar.png',
+  twitterCard: 'summary'
 })
 </script>
 
@@ -15,8 +15,8 @@ useSeoMeta({
     <a class="skip-link" href="#top">跳至主要內容</a>
     <header class="site-header wrap">
       <a class="brand" href="#top" aria-label="拉風輸入法，回到頁首">
-        <span class="brand-mark" aria-hidden="true"><span>l</span><span>l</span><i></i></span>
-        <span class="brand-name">llavon<span class="brand-divider">/</span><span class="brand-ime">ime</span></span>
+        <img class="brand-logo" src="/llavon-avatar.png" alt="" width="42" height="42">
+        <span class="brand-name">拉風輸入法</span>
       </a>
       <nav class="header-nav" aria-label="主要導覽">
         <a href="#features">特色</a>
@@ -41,9 +41,10 @@ useSeoMeta({
     <main id="top">
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-line"></span> LLAVON IME / 繁體中文注音輸入法</div>
-          <h1 id="hero-title">使用語境選字的<br><em>注音輸入法。</em></h1>
-          <p class="hero-description">拉風輸入法使用專為注音訓練的語言模型，根據前文、已選文字和注音預測候選字。模型在本機執行，輸入內容不需要送往雲端。</p>
+          <div class="eyebrow"><span class="eyebrow-line"></span> 拉風輸入法 / 繁體中文注音輸入法</div>
+          <h1 id="hero-title">使用語境選字的<br><em>注音輸入法</em></h1>
+          <p class="hero-description">拉風輸入法以大型語言模型（LLM）技術棧為核心，使用專為繁體中文注音訓練的模型，根據前文、已選文字和注音預測候選字。推論在本機完成，輸入內容不需要送往雲端。</p>
+          <p class="hero-distinction">本專案絕不是直接將現有大語言模型服務或現成模型接至注音輸入法。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="https://github.com/llavon-ime/ime-windows/releases/tag/latest" target="_blank" rel="noopener noreferrer">下載 Windows 版 <span aria-hidden="true">↗</span></a>
             <a class="button button-text" href="#get-started">查看其他平台 <span aria-hidden="true">↓</span></a>
@@ -51,9 +52,9 @@ useSeoMeta({
           <p class="hero-note">Windows x64 · macOS arm64 · Linux x86_64　／　專案仍在開發中</p>
         </div>
 
-        <div class="hero-visual">
-          <div class="visual-orbit orbit-one"></div>
-          <div class="visual-orbit orbit-two"></div>
+        <div class="hero-visual" aria-label="本機選字流程示意">
+          <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+          <div class="visual-orbit orbit-two" aria-hidden="true"></div>
           <div class="visual-accent" aria-hidden="true">ㄌ</div>
           <div class="visual-caption">L L A V O N　 /　 I M E</div>
           <div class="composition-card">
@@ -89,12 +90,20 @@ useSeoMeta({
               <div class="feature-symbol feature-symbol-phonetic" aria-hidden="true">ㄅ<span>ㄆ</span></div>
               <h3>專為注音訓練</h3>
               <p>使用繁體中文注音專用模型，並以合法注音候選集合約束預測結果。</p>
+              <a class="feature-link" href="https://huggingface.co/tony65535/llavon-ime-llama-250m-GGUF" target="_blank" rel="noopener noreferrer">查看 Hugging Face 模型 ↗</a>
             </article>
             <article class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-symbol" aria-hidden="true">本<span>機</span></div>
               <h3>完全本機推論</h3>
               <p>模型在裝置上執行，輸入內容無須傳送至雲端，也能離線使用。</p>
+            </article>
+            <article class="feature-item">
+              <span class="feature-number">04</span>
+              <div class="feature-symbol feature-symbol-lora" aria-hidden="true">LoRA</div>
+              <h3>個人化 LoRA 微調</h3>
+              <p>利用輸入紀錄在本機微調模型，讓選字更貼近你的用字習慣。訓練紀錄加密保存在本機。</p>
+              <a class="feature-link" href="https://github.com/llavon-ime/lora-trainer" target="_blank" rel="noopener noreferrer">了解 LoRA 微調 ↗</a>
             </article>
           </div>
         </div>
@@ -141,7 +150,7 @@ useSeoMeta({
           </div>
           <div class="license-panel" aria-label="授權資訊">
             <div><span>程式碼</span><strong>BSD 2-Clause</strong><a href="https://github.com/llavon-ime/ime-windows/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">查看授權 ↗</a></div>
-            <div><span>公開模型權重</span><strong>CC BY-NC 4.0</strong><a href="https://github.com/llavon-ime/ime-windows/blob/main/MODEL-LICENSE.txt" target="_blank" rel="noopener noreferrer">僅限非商業用途 ↗</a></div>
+            <div><span>公開模型權重</span><strong>CC BY-NC 4.0</strong><a href="https://huggingface.co/tony65535/llavon-ime-llama-250m-GGUF" target="_blank" rel="noopener noreferrer">查看模型授權 ↗</a></div>
           </div>
         </div>
       </section>
@@ -149,7 +158,7 @@ useSeoMeta({
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <div><a class="footer-brand" href="#top">llavon<span>.</span></a><p>開源的繁體中文注音輸入法。</p></div>
+        <div><a class="footer-brand" href="#top">拉風輸入法</a><p>開源的繁體中文注音輸入法</p></div>
         <div class="footer-links"><a href="https://github.com/llavon-ime" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/llavon-ime/ime-windows/issues" target="_blank" rel="noopener noreferrer">Windows 問題 ↗</a><a href="https://github.com/llavon-ime/ime-fcitx5/issues" target="_blank" rel="noopener noreferrer">macOS / Linux 問題 ↗</a></div>
       </div>
       <div class="wrap footer-bottom"><span>© {{ new Date().getFullYear() }} Llavon IME</span><span>Windows · macOS · Linux</span></div>

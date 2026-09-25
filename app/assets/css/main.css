@@ -42,7 +42,7 @@ h1, h2 { font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif; font-weig
 h1 { font-size: clamp(48px, 5.4vw, 78px); line-height: 1.38; margin-bottom: 31px; white-space: nowrap; }
 h1 em { color: #a96d57; font-style: normal; }
 .hero-description { max-width: 510px; color: #746c65; font-size: 16px; line-height: 2; letter-spacing: .025em; margin-bottom: 18px; }
-.hero-distinction { max-width: 510px; margin: 0 0 35px; padding-left: 14px; border-left: 2px solid #a96d57; color: #4f4944; font-size: 13px; line-height: 1.8; }
+.hero-distinction { max-width: 510px; margin: 0 0 35px; padding: 16px 20px; border-left: 3px solid #a96d57; background: #f8f4ef; color: #3e342f; font-size: 15px; font-weight: 600; line-height: 1.8; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; }
 .button { min-height: 51px; display: inline-flex; align-items: center; justify-content: center; gap: 21px; padding: 0 23px; border-radius: 3px; font-size: 13px; font-weight: 600; letter-spacing: .015em; transition: transform .2s ease, background .2s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -110,7 +110,7 @@ h1 em { color: #a96d57; font-style: normal; }
 .flow-item h3 { margin-bottom: 9px; font-family: "Noto Serif TC", "Songti TC", serif; font-size: 21px; font-weight: 600; letter-spacing: -.03em; }
 .flow-item p { color: #918780; font-size: 12px; line-height: 1.7; margin: 0; }
 .flow-glyph { justify-self: end; color: #d8c0b2; font-family: "Noto Serif TC", serif; font-size: 27px; letter-spacing: -.1em; }
-.flow-illustration { display: block; justify-self: end; width: 72px; height: 108px; object-fit: contain; }
+.flow-illustration { display: block; justify-self: end; width: 44px; height: 66px; object-fit: contain; }
 
 .get-section { background: #fff; border-top: 1px solid #eee9e4; }
 .get-heading { display: flex; align-items: end; justify-content: space-between; gap: 50px; margin-bottom: 49px; }
@@ -223,7 +223,7 @@ h1 em { color: #a96d57; font-style: normal; }
   .section-heading h2, .how-intro h2, .get-heading h2 { font-size: 36px; }
   .flow-item { grid-template-columns: 25px 1fr 40px; gap: 10px; }
   .flow-glyph { font-size: 20px; }
-  .flow-illustration { width: 38px; height: 57px; }
+  .flow-illustration { width: 24px; height: 36px; }
   .footer-inner { display: block; padding-block: 60px; }
   .footer-links { margin-top: 24px; }
   .footer-bottom { flex-direction: column; gap: 7px; }

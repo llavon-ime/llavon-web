@@ -159,7 +159,7 @@ useSeoMeta({
           </div>
           <div class="flow-list" aria-label="輸入法運作流程">
             <div class="flow-item"><span class="flow-step">01</span><div><h3>接收輸入</h3><p>取得注音、已選文字與可用的前文。</p></div><span class="flow-glyph" aria-hidden="true">ㄅㄆ</span></div>
-            <div class="flow-item"><span class="flow-step">02</span><div><h3>本機推論</h3><p>專用模型分析目前的輸入語境。</p></div><img class="flow-illustration" src="/bumblebee-lineart.png" alt="大黃蜂全身單色插畫" width="1024" height="1536" loading="lazy" decoding="async"></div>
+            <div class="flow-item"><span class="flow-step">02</span><div><h3>本機推論</h3><p>專用模型分析目前的輸入語境。</p></div><img class="flow-illustration" src="/transformer.png" alt="大黃蜂全身單色插畫" width="256" height="384" loading="lazy" decoding="async"></div>
             <div class="flow-item"><span class="flow-step">03</span><div><h3>約束候選</h3><p>從讀音相符的字詞中選出預測結果。</p></div><span class="flow-glyph" aria-hidden="true">字</span></div>
           </div>
         </div>

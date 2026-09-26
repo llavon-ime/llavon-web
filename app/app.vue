@@ -5,6 +5,13 @@ type Platform = 'windows' | 'macos' | 'linux' | 'mobile' | 'unknown'
 
 const platform = ref<Platform>('unknown')
 
+const flowIllustrations = [
+  { kind: 'transformer', src: '/transformer.png' },
+  { kind: 'logo', src: '/llavon-avatar.png' },
+  { kind: 'gpu', src: '/graphics-card.svg' }
+] as const
+const flowIllustration = ref<(typeof flowIllustrations)[number] | null>(null)
+
 const downloads = {
   windows: { label: '下載 Windows 版', href: 'https://github.com/llavon-ime/ime-windows/releases/tag/latest' },
   macos: { label: '查看 macOS 安裝步驟', href: 'https://github.com/llavon-ime/homebrew-llavon-ime#使用者安裝一鍵安裝' },
@@ -19,6 +26,8 @@ const primaryDownload = computed(() => {
 })
 
 onMounted(() => {
+  flowIllustration.value = flowIllustrations[Math.floor(Math.random() * flowIllustrations.length)] ?? null
+
   const userAgent = navigator.userAgent
   if (/Android|iPhone|iPad|iPod|Mobile|Tablet/i.test(userAgent)
     || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
@@ -163,7 +172,7 @@ useSeoMeta({
           </div>
           <div class="flow-list" aria-label="輸入法運作流程">
             <div class="flow-item"><span class="flow-step">01</span><div><h3>接收輸入</h3><p>取得注音、已選文字與可用的前文。</p></div><span class="flow-glyph" aria-hidden="true">ㄅㄆ</span></div>
-            <div class="flow-item"><span class="flow-step">02</span><div><h3>本機推論</h3><p>專用模型分析目前的輸入語境。</p></div><img class="flow-illustration" src="/transformer.png" alt="大黃蜂全身單色插畫" width="256" height="384" loading="lazy" decoding="async"></div>
+            <div class="flow-item"><span class="flow-step">02</span><div><h3>本機推論</h3><p>專用模型分析目前的輸入語境。</p></div><img v-if="flowIllustration" class="flow-illustration" :class="`flow-illustration-${flowIllustration.kind}`" :src="flowIllustration.src" alt="" width="44" height="66" loading="lazy" decoding="async"><span v-else class="flow-illustration-placeholder" aria-hidden="true"></span></div>
             <div class="flow-item"><span class="flow-step">03</span><div><h3>約束候選</h3><p>從讀音相符的字詞中選出預測結果。</p></div><span class="flow-glyph" aria-hidden="true">字</span></div>
           </div>
         </div>

@@ -111,6 +111,9 @@ h1 em { color: #a96d57; font-style: normal; }
 .flow-item p { color: #918780; font-size: 12px; line-height: 1.7; margin: 0; }
 .flow-glyph { justify-self: end; color: #d8c0b2; font-family: "Noto Serif TC", serif; font-size: 27px; letter-spacing: -.1em; }
 .flow-illustration { display: block; justify-self: end; width: 44px; height: 66px; object-fit: contain; }
+.flow-illustration-logo { width: 36px; height: 36px; filter: sepia(1) saturate(.4); opacity: .5; }
+.flow-illustration-gpu { width: 72px; height: 42px; opacity: .75; }
+.flow-illustration-placeholder { display: block; justify-self: end; width: 44px; height: 66px; }
 
 .get-section { background: #fff; border-top: 1px solid #eee9e4; }
 .get-heading { display: flex; align-items: end; justify-content: space-between; gap: 50px; margin-bottom: 49px; }
@@ -224,6 +227,9 @@ h1 em { color: #a96d57; font-style: normal; }
   .flow-item { grid-template-columns: 25px 1fr 40px; gap: 10px; }
   .flow-glyph { font-size: 20px; }
   .flow-illustration { width: 24px; height: 36px; }
+  .flow-illustration-logo { width: 22px; height: 22px; }
+  .flow-illustration-gpu { width: 40px; height: 26px; }
+  .flow-illustration-placeholder { width: 24px; height: 36px; }
   .footer-inner { display: block; padding-block: 60px; }
   .footer-links { margin-top: 24px; }
   .footer-bottom { flex-direction: column; gap: 7px; }

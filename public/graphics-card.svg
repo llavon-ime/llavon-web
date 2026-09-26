@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90" fill="none" stroke="#b38f7f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <title>單風扇顯卡線稿</title>
+  <path d="M12 13h179l6 5v56l-6 5H12zM12 18H4v57h8M12 29H5M12 63H5"/>
+  <path d="M13 15h26l-4 13 4 47H13M39 15l11 8-9 10-6-5M35 75l16-11-10-10"/>
+  <path d="M50 15h66l-10 15H43zM50 75h66l-10-15H43zM49 17l-7 13M49 73l-7-13"/>
+  <path d="M45 33h62v27H45zM47 40h58M47 47h58M47 54h58"/>
+  <path d="M111 15h58l16 15-5 15 5 15-16 15h-58l-12-15 5-15-5-15z"/>
+  <path d="m110 16 12 14m48-14-12 14m-48 44 12-14m48 14-12-14m25-31-13 5m13 27-13-5"/>
+  <circle cx="142" cy="45" r="28"/>
+  <circle cx="142" cy="45" r="23"/>
+  <circle cx="142" cy="45" r="9"/>
+  <path d="M142 23v11m14-7-6 9m14 9h-11m3 18-6-9m-8 14V57m-14 6 6-9m-14-9h11m-3-18 6 9"/>
+  <path d="m171 15 19 4 6-2m-25 58 19-4 6 2M47 79v7h58v-7M55 81v5m8-5v5m8-5v5m8-5v5m8-5v5m8-5v5"/>
+</svg>

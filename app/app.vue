@@ -188,7 +188,7 @@ useSeoMeta({
               <span class="platform-desc">一般使用者下載最新發布頁面的 <code>*-setup.exe</code>；安裝程式會下載並驗證預設模型。</span>
               <span class="platform-end">前往下載頁 <span>→</span></span>
             </a>
-            <a class="platform-card" href="https://github.com/llavon-ime/homebrew-llavon-ime#使用者安裝一鍵安裝" target="_blank" rel="noopener noreferrer">
+            <a class="platform-card" href="https://github.com/llavon-ime/homebrew-llavon-ime/blob/main/README.md#安裝" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">MACOS · ARM64 <span>↗</span></span>
               <span class="platform-title">macOS <span>↗</span></span>
               <span class="platform-desc">透過 Homebrew Cask 安裝原生輸入法。首次安裝後請在系統設定加入輸入方式，並登出再登入。</span>

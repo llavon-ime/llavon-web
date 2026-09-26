@@ -194,7 +194,7 @@ useSeoMeta({
               <span class="platform-desc">透過 Homebrew Cask 安裝原生輸入法。首次安裝後請在系統設定加入輸入方式，並登出再登入。</span>
               <span class="platform-end">查看安裝步驟 <span>→</span></span>
             </a>
-            <a class="platform-card" href="https://github.com/llavon-ime/ime-fcitx5#linux" target="_blank" rel="noopener noreferrer">
+            <a class="platform-card" href="https://github.com/llavon-ime/ime-unix#linux" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">LINUX · X86_64 <span>↗</span></span>
               <span class="platform-title">Linux <span>↗</span></span>
               <span class="platform-desc">使用 Fcitx 5。提供原始碼建置與 x86_64 的 <code>.deb</code> / <code>.rpm</code> 套件；系統版本需求請看安裝說明。</span>

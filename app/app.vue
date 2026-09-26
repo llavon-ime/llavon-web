@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const socialImage = 'https://www.llavon.org/llavon-avatar.png'
+
 type Platform = 'windows' | 'macos' | 'linux' | 'mobile' | 'unknown'
 
 const platform = ref<Platform>('unknown')
@@ -38,8 +40,10 @@ useSeoMeta({
   ogTitle: '拉風輸入法',
   ogDescription: '使用本機語言模型選字的繁體中文注音輸入法。',
   ogType: 'website',
-  ogImage: '/llavon-avatar.png',
-  twitterCard: 'summary'
+  ogUrl: 'https://www.llavon.org/',
+  ogImage: socialImage,
+  twitterCard: 'summary',
+  twitterImage: socialImage
 })
 </script>
 
@@ -80,7 +84,7 @@ useSeoMeta({
           <p class="hero-distinction">本專案絕不是直接將現有大語言模型服務或現成模型接至注音輸入法。</p>
           <div class="hero-actions">
             <a v-if="primaryDownload" class="button button-primary" :href="primaryDownload.href" target="_blank" rel="noopener noreferrer">{{ primaryDownload.label }} <span aria-hidden="true">↗</span></a>
-            <span v-else-if="platform === 'mobile'" class="button button-unavailable" role="status">手機端不支援</span>
+            <span v-else-if="platform === 'mobile'" class="button button-unavailable" role="status">手機端暫不支援拉風輸入法，未來大概也不會支援</span>
             <a v-else class="button button-primary" href="#get-started">查看支援平台 <span aria-hidden="true">↓</span></a>
             <a class="button button-text" href="#get-started">查看各平台 <span aria-hidden="true">↓</span></a>
           </div>

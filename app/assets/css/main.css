@@ -49,7 +49,7 @@ h1 em { color: #a96d57; font-style: normal; }
 .button-primary { background: #292522; color: #fff; }
 .button-primary:hover { background: #a96d57; }
 .button-primary span { font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; }
-.button-unavailable { border: 1px solid #e3dfda; color: #746b63; cursor: default; }
+.button-unavailable { border: 1px solid #e3dfda; color: #746b63; cursor: default; line-height: 1.6; padding-block: 10px; }
 .button-unavailable:hover { transform: none; }
 .button-text { color: #514b46; }
 .button-text:hover { color: #a96d57; }

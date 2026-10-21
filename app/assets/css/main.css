@@ -624,6 +624,12 @@ h1 em {
   margin-bottom: 31px;
 }
 
+.inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+}
+
 .inline-link {
   display: inline-flex;
   align-items: center;
@@ -750,7 +756,7 @@ h1 em {
 }
 
 .platform-card {
-  min-height: 234px;
+  min-height: 294px;
   display: flex;
   flex-direction: column;
   padding: 26px 28px 24px;
@@ -1164,7 +1170,7 @@ h1 em {
   }
 
   .platform-card {
-    min-height: 210px;
+    min-height: 234px;
   }
 
   .platform-title {

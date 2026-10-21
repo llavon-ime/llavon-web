@@ -183,7 +183,7 @@ useSeoMeta({
 
       <section id="get-started" class="get-section section-pad">
         <div class="wrap">
-          <div class="get-heading"><div><span class="section-index">03 / 各平台</span><h2>下載與安裝</h2></div><p>各平台的安裝條件與步驟可能隨版本變動；請以專案 README 和發布頁為準。</p></div>
+          <div class="get-heading"><div><span class="section-index">03 / 各平台</span><h2>下載與安裝</h2></div></div>
           <div class="platform-grid">
             <a class="platform-card" href="https://github.com/llavon-ime/ime-windows/releases/tag/latest" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">WINDOWS 10+ · X64 <span>↗</span></span>

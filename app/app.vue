@@ -14,8 +14,8 @@ const flowIllustration = ref<(typeof flowIllustrations)[number] | null>(null)
 
 const downloads = {
   windows: { label: '下載 Windows 版', href: 'https://github.com/llavon-ime/ime-windows/releases/tag/latest' },
-  macos: { label: '查看 macOS 安裝步驟', href: 'https://github.com/llavon-ime/homebrew-llavon-ime#使用者安裝一鍵安裝' },
-  linux: { label: '查看 Linux 安裝步驟', href: 'https://github.com/llavon-ime/ime-fcitx5#linux' }
+  macos: { label: '查看 macOS 安裝步驟', href: 'https://github.com/llavon-ime/ime-unix#macos' },
+  linux: { label: '查看 Linux 安裝步驟', href: 'https://github.com/llavon-ime/ime-unix#linux' }
 } as const
 
 const primaryDownload = computed(() => {
@@ -185,19 +185,16 @@ useSeoMeta({
             <a class="platform-card" href="https://github.com/llavon-ime/ime-windows/releases/tag/latest" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">WINDOWS 10+ · X64 <span>↗</span></span>
               <span class="platform-title">Windows <span>↗</span></span>
-              <span class="platform-desc">一般使用者下載最新發布頁面的 <code>*-setup.exe</code>；安裝程式會下載並驗證預設模型。</span>
               <span class="platform-end">前往下載頁 <span>→</span></span>
             </a>
-            <a class="platform-card" href="https://github.com/llavon-ime/homebrew-llavon-ime/blob/main/README.md#安裝" target="_blank" rel="noopener noreferrer">
+            <a class="platform-card" href="https://github.com/llavon-ime/ime-unix#macos" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">MACOS · ARM64 <span>↗</span></span>
               <span class="platform-title">macOS <span>↗</span></span>
-              <span class="platform-desc">透過 Homebrew Cask 安裝原生輸入法。首次安裝後請在系統設定加入輸入方式，並登出再登入。</span>
               <span class="platform-end">查看安裝步驟 <span>→</span></span>
             </a>
             <a class="platform-card" href="https://github.com/llavon-ime/ime-unix#linux" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">LINUX · X86_64 <span>↗</span></span>
               <span class="platform-title">Linux <span>↗</span></span>
-              <span class="platform-desc">使用 Fcitx 5。提供原始碼建置與 x86_64 的 <code>.deb</code> / <code>.rpm</code> 套件；系統版本需求請看安裝說明。</span>
               <span class="platform-end">查看安裝步驟 <span>→</span></span>
             </a>
           </div>

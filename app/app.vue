@@ -14,7 +14,7 @@ const flowIllustration = ref<(typeof flowIllustrations)[number] | null>(null)
 
 const downloads = {
   windows: { label: '下載 Windows 版', href: 'https://github.com/llavon-ime/ime-windows/releases/tag/latest' },
-  macos: { label: '查看 macOS 安裝步驟', href: 'https://github.com/llavon-ime/ime-unix#macos' },
+  macos: { label: '下載 macOS 版', href: 'https://github.com/llavon-ime/ime-unix/releases' },
   linux: { label: '查看 Linux 安裝步驟', href: 'https://github.com/llavon-ime/ime-unix#linux' }
 } as const
 
@@ -190,10 +190,10 @@ useSeoMeta({
               <span class="platform-title">Windows <span>↗</span></span>
               <span class="platform-end">前往下載頁 <span>→</span></span>
             </a>
-            <a class="platform-card" href="https://github.com/llavon-ime/ime-unix#macos" target="_blank" rel="noopener noreferrer">
+            <a class="platform-card" href="https://github.com/llavon-ime/ime-unix/releases" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">MACOS · ARM64 <span>↗</span></span>
               <span class="platform-title">macOS <span>↗</span></span>
-              <span class="platform-end">查看安裝步驟 <span>→</span></span>
+              <span class="platform-end">前往下載頁 <span>→</span></span>
             </a>
             <a class="platform-card" href="https://github.com/llavon-ime/ime-unix#linux" target="_blank" rel="noopener noreferrer">
               <span class="platform-meta">LINUX · X86_64 <span>↗</span></span>
